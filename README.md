@@ -10,6 +10,7 @@ This is a useful Discord.py bot that, with Slash Commands and the DiscordSRV plu
 - [Live Demo](#live-demo)
 - [Background](#background)
   - [Why not use LuckPerms?](#why-not-use-luckperms)
+  - [Challenges](#challenges)
 - [Features](#features)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing-🤝)
@@ -33,6 +34,10 @@ This bot simplifies the process by being a public bot that can be added to any s
 ### Why not use LuckPerms?
 LuckPerms is a great plugin for managing permissions, however, the scope for allowing users to use `/whitelist` allows users to use all whitelist subcommands, such as `/whitelist remove`, which is not ideal for a public bot as **anyone could remove anyone from the whitelist**. This bot only allows adding and listing players, and removing players is restricted to trusted players or owners.
 
+### Challenges
+The main challenge was the integration with DiscordSRV, as it does not have a built-in API for interacting with the server. The solution was to use the console channel as a bridge, allowing the bot to issue commands to the server and read responses from it.
+
+Another challenge was the use of Slash Commands and remembering how to use Python, as it's been quite a while since I've used it and I had to look and play with a lot of code to get it working. However, the Discord.py documentation is very good and I was able to get it working in a few hours with some trial and error and community support!
 
 ## Features
 - **Slash Commands** - for ease of use, the bot uses Discord's new-ish Slash Commands for clean interactions, and reduces ambiguity.
